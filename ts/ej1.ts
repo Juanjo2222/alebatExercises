@@ -5,11 +5,20 @@ interface Animal {
   canSleep: boolean;
 }
 
-interface Bird extends Animal {
+type Bird = Animal & {
   canFly: boolean;
-}
+};
 
-interface Dog extends Bird {
+type Dog = Animal & {
   race: String;
   age: number;
-}
+};
+
+const perro: Dog = {
+  name: "Dogo",
+  canEat: true,
+  canDrink: true,
+  canSleep: true,
+  race: "Huskey",
+  age: 4,
+};
