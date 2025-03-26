@@ -10,7 +10,7 @@ type Bird = Animal & {
 };
 
 type Dog = Animal & {
-  race: String;
+  race: "Huskey" | "Labrador" | "Chucho";
   age: number;
 };
 
