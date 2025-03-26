@@ -33,3 +33,22 @@ function userData({ name, last, salary }) {
 }
 
 console.log(userData(user2));
+
+//TERCER CÓDIGO
+
+const user3 = {
+  name: "Álvaro",
+  last: "Morón",
+  age: 30,
+  nationality: "Morocco",
+};
+
+function isForeign({ age, nationality }) {
+  if (nationality !== "España" || age !== "30") {
+    return "No es apto para la ayuda del gobierno";
+  }
+
+  return "Apto para la ayuda del gobierno";
+}
+
+console.log(isForeign(user3));
