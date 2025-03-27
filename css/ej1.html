@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1 class="first-title">Título 1</h1>
+    <h2 class="second-title">Título 2</h2>
+    <h3 class="third-title">Título 3</h3>
+    <button class="confirm-button">Confirmar</button>
+</body>
+</html>
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --big-font-size: 2em;
+        --normal-font-size: 1.5em;
+        --small-font-size: 1em;
+        --transition-for-buttons: translateY(-0.3em);
+    }
+
+    .first-title, .second-title, .third-title {
+        color: var(--primary-color);
+    }
+
+    .first-title{
+        font-size: var(--big-font-size);
+    }
+
+    .second-title{
+        font-size: var(--normal-font-size);
+    }
+
+    .third-title{
+        font-size: var(--small-font-size);
+    }
+
+    .confirm-button {
+        background-color: var(--primary-color);
+        color: white;
+        font-size: var(--normal-font-size);
+        padding: 0.5em 1.5em;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        transition: transform var(--transition-duration) ease-in-out;
+
+    }
+    .confirm-button:hover {
+        transform: scale(1.1);
+    }
+</style>
