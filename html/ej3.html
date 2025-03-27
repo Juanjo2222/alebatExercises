@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <label class="name" for="name">Name:</label>
+        <input type="text" id="name">
+
+        <label class="last" for="last">Last:</label>
+        <input type="text" id="last">
+
+        <label class="age" for="age">Age:</label>
+        <input type="number" id="age">
+
+        <label class="email" for="email">Email:</label>
+        <input type="email" id="email">
+
+        <label class="radio-terms">Terms:</label>
+            <div class="radio-group">
+                <input type="radio" id="agreeRadio" value="si">
+                <label class="agreeRadio" for="agreeRadio">Sí</label>
+
+                <input type="radio" id="notAgreeRadio"value="no">
+                <label class="notAgreeRadio" for="notAgreeRadio">No</label>
+            </div>
+
+        <label class="check-terms">Terms:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="agreeCheck" value="si">
+                <label class="agreeCheck" for="agreeCheck">Sí</label>
+
+                <input type="checkbox" id="notAgreeCheck"  value="no">
+                <label class="notAgreeCheck" for="notAgreeCheck">No</label>
+            </div>
+
+        <button class="register-button" type="submit">Registrarse</button>
+    </form>
+</body>
+</html>
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15rem;
+    }
+
+    .form {
+        background-color: white;
+        padding: 1.25rem;
+        width: 18.75rem;
+    }
+
+    .name, .last, .age, .email, .radio-terms, .check-terms{
+        display: block;
+        margin-top: 1.25em;
+        font-weight: bold;
+    }
+
+    .radio-group, .checkbox-group{
+        margin-top: 0.625rem;
+    }
+
+    .register-button {
+        width: 100%;
+        padding: 0.625rem;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 0.625rem;
+    }
+
+</style>
