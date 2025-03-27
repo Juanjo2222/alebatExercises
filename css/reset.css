@@ -1,0 +1,23 @@
+body {
+    background-color: #cad3f8;
+    margin: 2em;
+    max-width: 17em;
+}
+
+h1 {
+    color: rgb(3, 56, 125);
+}
+
+h2 {
+    color:rgb(31, 47, 92);
+}
+
+section{
+    background-color: rgb(89, 238, 92);
+    padding: 0.5em;
+}
+
+footer{
+    background-color: rgb(216, 153, 250);
+    padding: 0.1em;
+}
