@@ -1,0 +1,37 @@
+$background-color: #2c3f4b;
+$button-color: #0658a9;
+$h-color: #ffffff;
+
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1rem;
+
+$opacity-transition-duration: 2s;
+$opacity-transition-timing: ease;
+$opacity-transition-property: opacity;
+
+body {
+  background-color: $background-color;
+}
+
+.h1-text,
+.h2-text,
+.h3-text {
+  color: $h-color;
+}
+
+.h1-text {
+  font-size: $h1-font-size;
+}
+.h2-text {
+  font-size: $h2-font-size;
+}
+.h3-text {
+  font-size: $h3-font-size;
+}
+
+.confirm-button:hover {
+  background-color: $button-color;
+  transition: $opacity-transition-property, $opacity-transition-duration,
+    $opacity-transition-timing;
+}
